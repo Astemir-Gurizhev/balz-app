@@ -25,10 +25,14 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
