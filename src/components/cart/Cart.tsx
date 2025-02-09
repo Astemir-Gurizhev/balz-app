@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux'
 
-
 interface Product {
 	id: string
 	name: string
@@ -19,8 +18,8 @@ const Cart: React.FC = () => {
 				{products.length ? (
 					products.map((product, index) => (
 						<p key={product.id}>
-							{index + 1}. name: <b>{product.name}</b> | num: {product.num} |
-							id: {product.id}
+							{index + 1}. Название: <b>{product.name}</b> | Количество:{' '}
+							<b>{product.num} </b>
 						</p>
 					))
 				) : (

@@ -31,7 +31,6 @@ const InputNum = ({
 			prefix={prefix}
 			suffix={suffix}
 			value={value}
-			style={{ width: '70%' }}
 		/>
 	)
 }

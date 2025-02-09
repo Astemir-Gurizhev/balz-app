@@ -14,7 +14,6 @@ const input = ({ value, placeholder, onChange, status }: IInput) => {
 			placeholder={placeholder}
 			onChange={onChange}
 			status={status}
-			style={{ width: '70%' }}
 		/>
 	)
 }

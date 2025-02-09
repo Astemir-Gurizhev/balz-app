@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FaCartArrowDown } from 'react-icons/fa'
 import { useDispatch } from 'react-redux'
 import { v4 as uuidv4 } from 'uuid'
-import { addProduct } from '../../redux/slices/ProductsSlice'
+import { addProduct } from '../../redux/slices/productsSlice'
 import Button from '../../ui/Btn'
 import Input from '../../ui/Input'
 import InputNum from '../../ui/InputNum'
@@ -26,7 +26,7 @@ const Form: React.FC = () => {
 			setNameStatus(undefined)
 			setNumStatus(undefined)
 		}
-		if (!name) {
+		if (!name ) {
 			setNameStatus('error')
 		}
 		if (num == null || num <= 0) {

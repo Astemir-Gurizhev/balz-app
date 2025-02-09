@@ -1,22 +1,32 @@
+
 body {
-	margin: 0;
-	min-width: 320px;
-	min-height: 100vh;
+	margin: 50px 0 0 0;
 	background: #425483;
 	color: #fff;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 
-.app {
+.bottom {
 	display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 10px;
+}
+
+.top {
+	margin: 10px;
+	background: #333;
+	padding: 10px 50px 50px;
+	border: 1px solid #fff;
+	border-radius: 10px;
 }
 
 .form {
 	margin: 10px;
 	background: #333;
-	padding: 10px 250px 50px;
+	padding: 10px 50px 50px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -27,7 +37,8 @@ body {
 .cart {
 	margin: 10px;
 	background: #333;
-	padding: 10px 250px 50px;
+	width: 500px;
+	padding: 10px 80px 50px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
