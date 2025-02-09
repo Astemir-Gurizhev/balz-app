@@ -1,19 +1,20 @@
 import { Input } from 'antd'
 
 interface IInput {
-	defaultValue?: string
+	value?: string
 	placeholder?: string
 	onChange?: React.ChangeEventHandler<HTMLInputElement>
-	status?: 'error' | 'warning'
+	status?: 'warning' | 'error'
 }
 
-const input = ({ defaultValue, placeholder, onChange, status }: IInput) => {
+const input = ({ value, placeholder, onChange, status }: IInput) => {
 	return (
 		<Input
-			defaultValue={defaultValue}
+			value={value}
 			placeholder={placeholder}
 			onChange={onChange}
 			status={status}
+			style={{ width: '70%' }}
 		/>
 	)
 }

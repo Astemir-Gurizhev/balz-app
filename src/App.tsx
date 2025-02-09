@@ -1,10 +1,11 @@
+import Cart from './components/cart/Cart'
 import Form from './components/form/Form'
 
 const App = () => {
 	return (
 		<div className="app">
 			<Form />
-      <div>cart</div>
+      <Cart />
 		</div>
 	)
 }

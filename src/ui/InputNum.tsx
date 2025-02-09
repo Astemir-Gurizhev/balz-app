@@ -1,20 +1,37 @@
 import { InputNumber } from 'antd'
 
 interface IInputNum {
-	addonBefore?: string
+	addonBefore?: string | React.ReactNode
 	prefix?: string
 	suffix?: string
-	onChange?: () => void
+	onChange?: (value: number | null) => void
+	placeholder?: string
+	value?: number | null
+	status?: 'warning' | 'error'
+	type?: string
 }
 
-const InputNum = ({ addonBefore, prefix, suffix, onChange }: IInputNum) => {
+const InputNum = ({
+	addonBefore,
+	prefix,
+	suffix,
+	onChange,
+	placeholder,
+	value,
+	status,
+	type,
+}: IInputNum) => {
 	return (
 		<InputNumber
+			onChange={onChange}
+			type={type}
+			status={status}
+			placeholder={placeholder}
 			addonBefore={addonBefore}
 			prefix={prefix}
 			suffix={suffix}
-			onChange={onChange}
-			style={{ width: '100%' }}
+			value={value}
+			style={{ width: '70%' }}
 		/>
 	)
 }

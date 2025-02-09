@@ -1,4 +1,4 @@
-import { Button } from "antd";
+import { Button } from 'antd'
 
 interface IBtn {
 	onClick?: React.MouseEventHandler<HTMLElement>
@@ -6,9 +6,11 @@ interface IBtn {
 	disabled?: boolean
 }
 
-const Btn = ({onClick, value, disabled}:IBtn) => {
+const Btn = ({ onClick, value, disabled }: IBtn) => {
 	return (
-		<Button onClick={onClick} disabled={disabled}> {value} </Button>
+		<Button onClick={onClick} disabled={disabled}>
+			{value}
+		</Button>
 	)
 }
 
