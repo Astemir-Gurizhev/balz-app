@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# https://balz.netlify.app/
 
 <h2> Проект с использованием: </h2>
 <ul>
