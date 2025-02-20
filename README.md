@@ -1,4 +1,4 @@
-# https://balz.netlify.app/
+# balz
 
 <h2> Проект с использованием: </h2>
 <ul>
